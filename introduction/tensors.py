@@ -1,13 +1,14 @@
 from __future__ import print_function
 import torch
 
-x = torch.randn(4,4)
-y = x.view(16)
-z = x.view(-1, 8)
+a = torch.ones(5)
+print(a)
 
-print(x.size(), y.size(), z.size())
+b = a.numpy()
+print(b)
 
-print(x)
-print(y)
-print(z)
+a.add_(1)
+
+print(a)
+print(b)
 

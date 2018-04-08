@@ -43,5 +43,15 @@ class Net(nn.Module):
 		return num_features
 
 net = Net()
-print(net)
+# print(net)
+
+# params = list(net.parameters())
+# print(len(params))
+# print(params[0].size())
+
+input = Variable(torch.randn(1, 1, 32, 32))
+out = net(input)
+print(out)
+
+
 

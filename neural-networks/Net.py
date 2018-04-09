@@ -53,5 +53,10 @@ input = Variable(torch.randn(1, 1, 32, 32))
 out = net(input)
 print(out)
 
+net.zero_grad()
+out.backward(torch.randn(1, 10))
+
+print(out)
+
 
 

@@ -14,3 +14,6 @@ gradients = torch.FloatTensor([0.1, 1.0, 0.0001])
 y.backward(gradients)
 
 print(x.grad)
+
+
+
